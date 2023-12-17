@@ -24,7 +24,8 @@ margin: 0;
 
 .container-fluid {
 padding: 0;
-background: url(../images/How-HTML--CSS--and-JavaScript-work-main.png);
+background: url(../images/9a5e3a54-0f0e-42a2-ab09-3ab748173cfe.png);
+width: 100%;
 }
 
 .display-4 {
@@ -46,4 +47,21 @@ background: rebeccapurple;
 color: aliceblue;
 text-align: center;
 font-weight: 700;
+}
+
+/* .container-fluid {
+justify-content: center;
+align-items: center;S
+} */
+
+.skills {
+background: url(../images/Skills\ background.jpg);
+width: 100%;
+font-size: 20px;
+font-weight: 700;
+}
+
+.skills-head {
+text-align: center;
+color: blueviolet;
 }
