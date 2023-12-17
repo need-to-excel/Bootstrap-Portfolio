@@ -7,48 +7,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rustam Portfolio</title>
 </head>
 
-
 <body>
+
     <!-- Navigation*/ -->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#aboutMe">
                 <h1>Rustam Abdumavlyanov</h1>
             </a>
-            <div>
-                <ul>
-                    <ul class="list-group list-group-horizontal-sm">
-                        <li class="list-group-item">My Work</li>
-                        <li class="list-group-item">My Skills</li>
-                        <li class="list-group-item">Contact</li>
-                    </ul>
-                </ul>
+            <div class="buttons">
+                <a class="btn btn-primary" href="#aboutMe" role="button">About me</a>
+                <a class="btn btn-primary" href="#myWork" role="button">My work</a>
+                <a class="btn btn-primary" href="#contactMe" role="button">Contact me</a>
             </div>
         </nav>
     </div>
 
     <!-- /*Jumbotron*/ -->
-    <div class="jumbotron">
+    <header class="jumbotron">
         <h1 class="display-4">Welcome to my portfolio page!</h1>
         <hr class="my-4">
         <div class="card" style="max-width: 24rem;">
-            <img class="card-img-top" src="../Bootstrap-Portfolio/images/Profile photo.jpg" alt="Card image cap">
+            <a href="https://www.linkedin.com/in/rustam-abdumavlyanov/"><img class="card-img-top"
+                    src="../Bootstrap-Portfolio/images/Profile photo.jpg" alt="Rustam-photo"></a>
             <div class="card-body">
                 <p class="card-text">I work as Senior Strategic Projects Manager and love coding</p>
             </div>
         </div>
-        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-    </div>
+    </header>
 
-    <!-- /*work*/ -->
-    <div class="container-fluid">
+    <!-- /*Portfolio section*/ -->
+    <main class="container-fluid" id="myWork">
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
                 <div class="card" style="max-width: 24rem;">
-                    <img src="./images/Website.jpg" class="card-img-top img-fluid" alt="website-image">
+                    <a href="https://github.com/need-to-excel"><img src="./images/Website.jpg"
+                            class="card-img-top img-fluid" alt="website-image"></a>
                     <div class="card-body">
                         <p class="card-text">My website portfolio.</p>
                     </div>
@@ -58,7 +56,8 @@
         <div class="row row-cols-2 project-work">
             <div class="col">
                 <div class="card" style="max-width: 24rem;">
-                    <img src="./images/Videogame.jpg" class="card-img-top img-fluid" alt="calculator-image">
+                    <a href="https://github.com/need-to-excel"><img src="./images/Videogame.jpg"
+                            class="card-img-top img-fluid" alt="calculator-image"></a>
                     <div class="card-body">
                         <p class="card-text">My calculator portfolio.</p>
                     </div>
@@ -66,7 +65,8 @@
             </div>
             <div class="col">
                 <div class="card rounded float-right" style="max-width: 24rem;">
-                    <img src="./images/calculator (3).jpg" class="card-img-top img-fluid" alt="videogaming">
+                    <a href="https://github.com/need-to-excel"><img src="./images/calculator (3).jpg"
+                            class="card-img-top img-fluid" alt="videogaming-image"></a>
                     <div class="card-body">
                         <p class="card-text">My Videos Game portfolio</p>
                     </div>
@@ -76,7 +76,8 @@
         <div class="row row-cols-2">
             <div class="col">
                 <div class="card" style="max-width: 24rem;">
-                    <img src="./images/Ledwall 2.jpg" class="card-img-top img-fluid" alt="Ledwall">
+                    <a href="https://github.com/need-to-excel"><img src="./images/Ledwall 2.jpg"
+                            class="card-img-top img-fluid" alt="Ledwall-image"></a>
                     <div class="card-body">
                         <p class="card-text">My Ledwall portfolio.</p>
                     </div>
@@ -84,54 +85,73 @@
             </div>
             <div class="col">
                 <div class="card rounded float-right" style="max-width: 24rem;">
-                    <img src="./images/online shop.png" class="card-img-topimg-fluid" alt="online shop image">
+                    <a href="https://github.com/need-to-excel"><img src="./images/online shop.png"
+                            class="card-img-topimg-fluid" alt="online-shop-image"></a>
                     <div class="card-body">
                         <p class="card-text">Online shop portfolio.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-
-    <!-- /*skills*/ -->
-
-    <div class="container-fluid skills">
+    <!-- /*Skills section*/ -->
+    <section class="container-fluid skills">
         <div class="column skills-head">
             <div class="col-sm">
                 <ul class="list-group">
-                    <li class="list-group-item-skills-head">My skills improvement</li>
+                    <li class="list-group-item-skills-head">My skills target</li>
                 </ul>
             </div>
         </div>
-            <div class="row">
-                <div class="col-sm">
-                    <ul class="list-group">
-                        <li class="list-group-item">UX-UI design</li>
+        <div class="row">
+            <div class="col-sm">
+                <ul class="list-group">
+                    <li class="list-group-item">UX-UI design</li>
 
-                        <li class="list-group-item list-group-item-primary">HTML</li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-secondary">CSS</li>
-                        <li class="list-group-item list-group-item-success">JavaScript</li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-warning">Bootstrap</li>
-                        <li class="list-group-item list-group-item-info">Node.js</li>
-                    </ul>
-                </div>
+                    <li class="list-group-item list-group-item-primary">HTML</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary">CSS</li>
+                    <li class="list-group-item list-group-item-success">JavaScript</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">Bootstrap</li>
+                    <li class="list-group-item list-group-item-info">Node.js</li>
+                </ul>
             </div>
         </div>
+    </section>
 
-
-        <!-- about-contact -->
-
-        <!-- footer -->
-
+    <!--About-contact footer-->
+    <footer class="jumbotron jumbotron-fluid about-me">
+        <div class="container">
+            <h1 class="display-4" id="aboutMe">About me</h1>
+            <p class="lead">Having managed IT projects in the past, I fell in love with creativity and problem solving
+                that IT solutions bring to our day-to-day life! Being in Bootcamp for the last
+                few weeks, I am facinated with all wonders that scripting uncovers. Please check my portfolio, your
+                feedback is much appreciated.
+                Please also drop me a message.
+                Thank you in advance.
+            </p>
+            <h1 class="display-4" id="contactMe">Contact me</h1>
+            <div class="social">
+                <a class="btn btn-primary btn-lg btn-floating" style="background-color: #430297"
+                    href="abdumavlyanov2004@yahoo.com" role="button"><i class="fa fa-yahoo"></i>
+                </a>
+                <a class="btn btn-primary btn-lg btn-floating" style="background-color: black"
+                    href="https://github.com/need-to-excel" role="button"><i class="fa fa-github"></i></a>
+                <a class="btn btn-primary btn-lg btn-floating" style="background-color: blue"
+                    href="https://www.linkedin.com/in/rustam-abdumavlyanov/!" role="button"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
+            <h6>Rustam Abdumavlyanov 2023</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
